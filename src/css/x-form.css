@@ -1,0 +1,43 @@
+.form__field {
+  border: 2px solid #ccc;
+  padding: 10px;
+  height: 40px;
+  width: 79%;
+  border-radius: 1px;
+}
+
+.form_button {
+  height: 40px;
+  width: 20%;
+  background-color: teal;
+  color: white;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 540;
+  text-align: center;
+  min-width: 80px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+
+.form_button:hover {
+  background-color: hsl(180, 100%, 35%);
+  transform: scale(103%);
+}
+
+@media (max-width: 1103px) {
+  .form__field {
+    width: 100%;
+    align: center;
+    margin: 0;
+    wrap: wrap;
+  }
+  .form_button {
+    width: 100%;
+    align: center;
+    margin: auto;
+    wrap: wrap;
+  }
+}

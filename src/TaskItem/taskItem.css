@@ -1,0 +1,54 @@
+.container__list {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.js-done {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 29px;
+  height: 29px;
+  border: none;
+  cursor: pointer;
+  background-color: hsl(120, 100%, 25%);
+  margin-right: 10px;
+  color: white;
+  transition: 1s;
+}
+
+.js-done.done::after {
+  content: '\2714'; /* tick */
+  color: white;
+}
+
+.js-done:hover {
+  background-color: hsl(120, 100%, 35%);
+}
+
+.js-remove {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 29px;
+  height: 29px;
+  border: none;
+  cursor: pointer;
+  background-color: hsl(0, 100%, 50%);
+  color: white;
+  transition: 1s;
+}
+
+.js-remove::after {
+  content: '\1F5D1'; /* kosz na śmieci */
+  color: white !important;
+}
+
+.js-remove:hover {
+  background-color: hsl(0, 100%, 70%);
+}
